@@ -1,3 +1,15 @@
+# AuthSecure-JAVA-API
+
+I decided to make an api for java simply because there were none
+
+Example that I used - [AuthSecure-CSHARP-Example](https://github.com/Authsecure-shop/Authsecure-CSHARP-Example)
+
+**Information**
+
+There is basic encryption for sent requests and iv keys
+
+I guess I just don't know how to make them right
+
 Perfect ✅
 Now I will finalize the README.md using your project name:
 
@@ -66,7 +78,7 @@ AuthSecure-Java-Example/
 │
 ├── LoginActivity.java          # Handles authentication UI & Login logic
 ├── MainActivity.java           # Opens after successful login
-├── KeyAuth.java                # API request, encryption & validation logic
+├── AuthSecure.java                # API request, encryption & validation logic
 └── HWID.java                   # Device HWID provider
 ```
 
@@ -85,7 +97,7 @@ Add this in **AndroidManifest.xml**:
 ### 2️⃣ Initialize Authentication Class
 
 ```java
-keyAuth = new KeyAuth(APP_NAME, OWNER_ID, VERSION, API_URL, SECRET, this);
+AuthSecure = new AuthSecure(APP_NAME, OWNER_ID, VERSION, API_URL, SECRET, this);
 ```
 
 ### 3️⃣ Perform Login
@@ -93,7 +105,7 @@ keyAuth = new KeyAuth(APP_NAME, OWNER_ID, VERSION, API_URL, SECRET, this);
 ```java
 String username = usernameEditText.getText().toString();
 String password = passwordEditText.getText().toString();
-keyAuth.login(username, password, hwid);
+AuthSecure.login(username, password, hwid);
 ```
 
 ---
