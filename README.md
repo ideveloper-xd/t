@@ -260,14 +260,4 @@ Now go to GitHub → open repository → click **Add File → Create New File** 
 
 ```
 
-README.md
 
-```
-
-Paste the above content → Commit ✅
-
----
-
-Agar chaho to mai **images + badges + logo UI** wala **premium style README** bhi bana deta hoon 😎  
-**Sirf bolo:** `Make it fancy` ✨
-```
